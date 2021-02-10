@@ -5,6 +5,8 @@ const path = require('path');
 const exphbs = require('express-handlebars');
 const dotenv = require('dotenv');
 const session = require('express-session');
+const https = require('https');
+const http = require('http');
 
 dotenv.config();
 const server = express();
@@ -86,6 +88,13 @@ server.use(function(req, res){
 })
 
 
-server.listen(5000, () => {
-    console.log(`Feed Nana ${PORT}`)
+const httpServer = http.createServer(server);
+const httpsServer = https.createServer(server);
+
+httpServer.listen(1006, () => {
+    console.log('listening on port 1006');
+})
+
+httpsServer.listen(1007, () => {
+    console.log('listening on port 1007')
 })
