@@ -6,15 +6,17 @@ const messages = [incorrect, maxed, error];
 
 
 form.addEventListener('submit', (e) => {
+
+    /* Handles form submission.  */
+
+    e.preventDefault();
     messages.forEach((message) => {
         if (!message.classList.contains("hidden")){
             message.classList.toggle("hidden");
         }
     })
-    e.preventDefault();
     axios.post('http://localhost:5000/authenticate', {password: e.target[0].value})
         .then(res => {
-            console.log(res)
             if (res.data === "success"){
                 window.location.replace('http://localhost:5000/');
             } else if (res.data === "invalid"){
