@@ -1,0 +1,638 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.hidden {
+  display: none;
+}
+/* * {
+    border: 1px solid red;
+} */
+body {
+  padding-bottom: 0;
+  /* border: 1px solid red; */
+  /* height: 100vh; */
+}
+
+html {
+  font-size: 62.5%;
+  border: 4px solid black;
+}
+
+a, button {
+  text-decoration: none;
+}
+
+h1, h2, .gallery-text, th {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+/* #big-image {
+    width: 1100px;
+    height: 400px;
+} */
+#before-intro {
+  margin: 2rem;
+}
+
+#before-intro h2, #before-intro p {
+  text-align: center;
+}
+
+#yt-embed {
+  margin: 0 2rem;
+}
+
+#big-image {
+  width: 600px;
+  height: 400px;
+  display: block;
+  margin: 3rem;
+  border: 4px solid black;
+}
+
+#big-image:hover {
+  transition-duration: 0.25s;
+  transform: scale(1.05);
+}
+
+header {
+  background: url("../img/background.png");
+  padding: 4rem;
+  border-bottom: 4px solid black;
+  background-size: 120%;
+  background-position-x: -40rem;
+  background-position-y: -2rem;
+}
+
+body header nav {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.4rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+}
+
+body header nav a {
+  text-decoration: none;
+  background: gainsboro;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+}
+
+body header nav a:hover {
+  transition-duration: 0.5s;
+  /* transform: scale(1.1); */
+  background: white;
+}
+
+#intro {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+h2 {
+  font-size: 3.6rem;
+}
+
+body section a, body section p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.4rem;
+}
+
+#separate-intro {
+  /* margin: 5rem 4rem 0 4rem;
+  padding: 5rem 5rem 0rem 0rem; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  margin: 0 1.5rem;
+}
+
+#my-projects {
+  text-align: center;
+  text-decoration: none;
+  background: gainsboro;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  width: 18rem;
+  margin: 2em 0;
+}
+
+#my-projects:hover, body footer a:hover {
+  transition-duration: 0.5s;
+  background: white;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-evenly;
+  /* padding: 0 4em 0 4em; */
+  line-height: 1.3rem;
+  margin: 1.7rem 0;
+}
+
+.gallery-images {
+  /* width: 300px;
+  height: 169px; */
+  width: 400px;
+  height: 225.3px;
+  display: block;
+  /* transition-duration: 0.25s; */
+}
+
+.gallery-text {
+  text-align: center;
+  color: black;
+  padding: 0;
+  line-height: 2.5rem;
+}
+
+.gallery-text:hover {
+  color: blue;
+  transition-duration: 0.25s;
+}
+
+footer {
+  background: grey;
+  padding: 4rem;
+  /* border-bottom: 4px solid black; */
+  text-align: center;
+  line-height: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+body footer p {
+  font-size: 3.6rem;
+}
+
+body footer a {
+  font-size: 3rem;
+  background: gainsboro;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  transition-duration: 0.5s;
+}
+
+#here {
+  background-color: white;
+}
+
+body section img {
+  display: block;
+  height: 400px;
+  border: 4px solid black;
+  margin: 2rem;
+}
+
+th {
+  font-size: 2.4rem;
+  padding-right: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+td {
+  font-size: 2.4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-top: 1.5rem;
+}
+
+.project-image {
+  width: 600px;
+  height: 337px;
+  min-width: 600px;
+  min-height: 337px;
+  display: block;
+  margin: 3rem;
+  border: 4px solid black;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+}
+
+.separate-project {
+  margin: 5rem 4rem 0 4rem;
+  padding: 5rem 5rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-items:hover {
+  color: blue !important;
+}
+
+#guns-footer {
+  margin-top: 0;
+}
+
+#pdf {
+  display: block;
+  margin: 0 auto;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem auto;
+}
+
+#contact-info h2 {
+  display: block;
+  margin: 0 auto;
+}
+
+#spotlight-download-button {
+  width: 20rem;
+  font-family: Impact;
+  font-size: 2.8rem;
+  background: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+  transition-duration: 0.25s;
+}
+
+#spotlight-download-button a {
+  color: black;
+}
+
+#spotlight-download-button a:hover {
+  color: white;
+}
+
+#spotlight-download-button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.separate-project-guns {
+  margin: 3rem 4rem 0 4rem;
+  /* padding: 5rem 5rem 0rem 0rem; */
+  display: flex;
+  flex-direction: column;
+}
+
+.guns-download-button {
+  width: 20rem;
+  font-family: Impact;
+  font-size: 2.8rem;
+  background: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-top: 1.5rem;
+}
+
+.guns-download-button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+#tutorial-button {
+  width: 20rem;
+  font-family: Impact;
+  font-size: 2.8rem;
+  background: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 1.5rem auto 2rem auto;
+  transition-duration: 0.25s;
+}
+
+#tutorial-a {
+  display: block;
+  margin: 1.5rem auto 2rem auto;
+  width: 20rem;
+}
+
+#tutorial-button:hover {
+  color:white;
+  background: black;
+  cursor: pointer;
+}
+
+#auth-form {
+  text-align: center;
+  padding: 50px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  height: 30px;
+  margin-right: 15px;
+}
+
+#auth-button {
+  width: 10rem;
+  font-family: Impact;
+  font-size: 2.1rem;
+  background: white;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 0 auto 2rem auto;
+  transition-duration: 0.25s;
+}
+
+#auth-button:hover {
+  cursor: pointer;
+  color:white;
+  background: black;
+}
+
+@media screen and (max-width: 1339px) {
+  .gallery-images {
+    width: 300px;
+    height: 169px;
+    display: block;
+    transition-duration: 0.5s;
+  }
+}
+@media screen and (max-width: 1310px) {
+  .gun-page-paragraphs {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1275px) {
+  .gallery-items, .gallery-items-excess {
+    flex-wrap: wrap;
+    flex-basis: 40%;
+  }
+
+  .guns-h2 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .gun-page-paragraphs {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .project {
+    display: block;
+  }
+
+  .gun-page-images {
+    display: block;
+    margin: 2rem auto 0 auto;
+  }
+
+  .guns-download-button {
+    width: 15rem;
+    font-size: 2.2rem;
+  }
+
+  .guns-h2 {
+    display: block;
+    margin: 0 auto 2rem auto;
+  }
+}
+@media screen and (max-width: 1035px) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery-images {
+    /* width: 500px;
+    height: 282px; */
+    width: 600px;
+    height: 337px;
+    transition-duration: 0.5s;
+  }
+
+  #pdf {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 975px) {
+  #yt-embed {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #intro, .project {
+    display: block;
+  }
+
+  .project {
+    margin-bottom: 4rem;
+  }
+
+  #my-projects, #separate-intro {
+    margin: 0 auto;
+  }
+
+  #big-image, .project-image {
+    margin: 3rem auto 0rem auto;
+  }
+
+  #separate-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin-top: 1.5rem;
+  }
+
+  #intro-paragraph {
+    width: 40rem;
+    margin: 3rem 0;
+    text-align: justify;
+  }
+
+  body section div h2 {
+    display: block;
+    margin: 0 auto 2rem auto;
+  }
+
+  #about-image {
+    display: block;
+    margin: 3rem auto 0 auto;
+  }
+}
+@media screen and (max-width: 800px) {
+  header {
+    background: white;
+    border: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  body header nav {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 2.4rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  body header nav a {
+    text-decoration: none;
+    background: gainsboro;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    transition-duration: 0.5s;
+    color: black;
+    width: 8rem;
+  }
+
+  body header nav a:hover {
+    transform: none;
+    background: black;
+    color: white;
+  }
+
+  #here {
+    color: white;
+    background-color: black;
+  }
+
+  .gallery-items-excess {
+    display: none;
+  }
+
+  .gun-page-images {
+    width: 600px;
+    height: 337px;
+  }
+}
+@media screen and (max-width: 740px) {
+  #intro p, body footer p {
+    font-size: 1.8rem;
+  }
+  #pdf {
+    display:none;
+  }
+}
+@media screen and (max-width: 685px) {
+  .gallery-items {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #big-image {
+    width: 500px;
+    height: 333px;
+  }
+
+  .gallery-images, .gun-page-images {
+    /* width: 400px;
+    height: 225.3px; */
+    width: 500px;
+    height: 282px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #big-image {
+    width: 400px;
+    height: 267px;
+  }
+
+  #yt-embed {
+    width: 450px;
+  }
+
+  .gallery-images, .gun-page-images {
+    width: 400px;
+    height: 225.3px;
+  }
+
+  #intro p, .gun-page-paragraphs {
+    font-size: 1.4rem;
+  }
+
+  h2, .guns-h2 {
+    font-size: 2.4rem;
+  }
+
+  #spotlight-download-button {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #big-image {
+    width: 300px;
+    height: 200px;
+  }
+
+  #yt-embed {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  #gallery-text, .guns-h2 {
+    font-size: 1.8rem;
+  }
+
+  .guns-download-button {
+    width: 10rem;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #intro-paragraph {
+    width: 20rem;
+    font-size: 1.8rem;
+  }
+
+  #yt-embed {
+    width: 300px;
+  }
+
+  .gallery-images, .gun-page-images {
+    width: 250px;
+    height: 141px;
+  }
+
+  th, td {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

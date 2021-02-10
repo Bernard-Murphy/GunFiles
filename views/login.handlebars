@@ -1,0 +1,12 @@
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script defer src="login.js"></script>
+<section id="auth-form">
+    <h2>Enter the password to continue</h2>
+    <form id="login" onSubmit="return auth()">
+        <input id="password" type="text" placeholder="Enter password"/>
+        <button id="auth-button">Submit</button>
+    </form>
+    <h2 id="error" class="hidden" style="text-align: center;">An error occurred</h2>
+    <h2 id="incorrect" class="hidden" style="text-align: center;">Incorrect password</h2>
+    <h2 id="maxed" class="hidden" style="text-align: center;">Maximum login attempts exceeded</h2>
+</section>
