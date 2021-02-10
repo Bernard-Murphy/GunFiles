@@ -15,10 +15,10 @@ form.addEventListener('submit', (e) => {
             message.classList.toggle("hidden");
         }
     })
-    axios.post('http://localhost:5000/authenticate', {password: e.target[0].value})
+    axios.post('https://guns.bernardmurphy.net/authenticate', {password: e.target[0].value})
         .then(res => {
             if (res.data === "success"){
-                window.location.replace('http://localhost:5000/');
+                window.location.replace('https://guns.bernardmurphy.net');
             } else if (res.data === "invalid"){
                 incorrect.classList.toggle("hidden");
             } else if (res.data === "maxed"){
